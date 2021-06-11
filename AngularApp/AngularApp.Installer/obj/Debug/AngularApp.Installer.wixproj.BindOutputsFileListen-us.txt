@@ -1,0 +1,2 @@
+C:\Users\Sadeep\Desktop\AngularApp\AngularApp.Installer\bin\Debug\en-us\AngularApp.Installer.msi
+C:\Users\Sadeep\Desktop\AngularApp\AngularApp.Installer\bin\Debug\en-us\AngularApp.Installer.wixpdb

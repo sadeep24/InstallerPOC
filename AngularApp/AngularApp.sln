@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularApp", "AngularApp\AngularApp.csproj", "{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "AngularApp.Installer", "AngularApp.Installer\AngularApp.Installer.wixproj", "{D2D98EB2-A315-4032-9EA4-28AC34606513}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Debug|x64.ActiveCfg = Debug|x64
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Debug|x64.Build.0 = Debug|x64
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Debug|x86.Build.0 = Debug|Any CPU
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Release|x64.ActiveCfg = Release|x64
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Release|x64.Build.0 = Release|x64
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Release|x86.ActiveCfg = Release|Any CPU
+		{98ED6B16-6793-4AAF-B018-6EDE64F82AE5}.Release|x86.Build.0 = Release|Any CPU
+		{D2D98EB2-A315-4032-9EA4-28AC34606513}.Debug|x64.ActiveCfg = Debug|x64
+		{D2D98EB2-A315-4032-9EA4-28AC34606513}.Debug|x86.ActiveCfg = Debug|x86
+		{D2D98EB2-A315-4032-9EA4-28AC34606513}.Release|x64.ActiveCfg = Release|x64
+		{D2D98EB2-A315-4032-9EA4-28AC34606513}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B5BC8A2-192A-45EB-8135-069C1E3223B5}
+	EndGlobalSection
+EndGlobal

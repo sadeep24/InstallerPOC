@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?if $(var.Platform)=x64 ?>
+  <?define ProductCode = "{E729BBEF-AF7D-45D2-B700-494C1FC9ABDD}" ?>
+  <?else?>
+  <?define ProductCode = "{147E1511-0032-4B0F-9B25-9B828954B9E3}" ?>
+  <?endif?>
+
+  <?define BuildVersion=1.2.3.4?>
+  <?define UpgradeCode="{29655D63-C775-47CD-9786-AAD0E1720937}"?>
+  
+  <Product Id="$(var.ProductCode)"
+           Name="!(loc.ProductName_$(var.Platform))"
+           Language="!(loc.Language)"
+           Version="$(var.BuildVersion)"
+           Manufacturer="!(loc.Company)"
+           UpgradeCode="$(var.UpgradeCode)">
+    
+    <Package InstallerVersion="200"
+             Compressed="yes" 
+             InstallScope="perMachine"
+             Platform="$(var.Platform)"
+             Manufacturer="!(loc.Company)"
+             Description="!(loc.Description)"
+             Keywords="!(loc.Keywords)"
+             Comments="!(loc.Comments)"
+             Languages="!(loc.Language)"
+             />
+
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+    
+    <MediaTemplate 
+      EmbedCab="yes"
+      />
+
+    <UIRef Id="WixUI_Minimal"/>
+    
+    <Feature Id="ProductFeature" Title="API SERVER" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="PublishedComponents" />
+    </Feature>
+    
+  </Product>
+
+</Wix>
